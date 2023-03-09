@@ -12,32 +12,72 @@
 
 Before you begin, make sure you have met the following requirements:
 
-- You only need a browser to access the project in `netlify`.
+- You need the version `17` of `Java/JDK`, `PostgreSQL` on your machine.
+  If you need installation instructions, click here.
 
-If you need installation instructions, [click here](https://www.google.com/intl/pt-BR/chrome/).
+If you need installation instructions, [click here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiJ7Ieqxs39AhUwppUCHWvFBVoQFnoECAkQAQ&url=https%3A%2F%2Fjava.tutorials24x7.com%2Fblog%2Fhow-to-install-java-17-on-windows&usg=AOvVaw0NRBuZwgs0vrM5_YVqmD20).
 
 ## 🚀 Installing API-Movie
 
 To install API-Movie, follow these steps:
 
-```
-You don't need to install anything, just open the project in your browser.
-```
-but, if you want to run the project locally on your machine
+1º Start your Postgre database server and configure 
 
-1º Run the backend on your intellij just build and run
-
-2º Run the frontend in your VSCode and run with the command below
-```
-> npm run start
-```
+2º Run the project on your intellij just build and run
 
 ## ☕ Using API-Movie
 
 To use API-Movie, follow these steps:
 
 ```
-The project is an API-Movie, with Angular being my SPA and Java...
+The API-Movie project is a challenge from Ubots in order to evaluate 
+your technical knowledge with a certain technology and framework.
+
+The API has some functionalities and the following is its 
+body for submission in each type of request.
+```
+Getting a movie
+```
+(GET) api/v1/movies/{id}
+```
+Getting all movies and its current evaluation
+```
+(GET) api/v1/movies
+```
+Deleting a movie
+```
+(DELETE) api/v1/movies/{id}
+```
+Creating a movie
+```
+(POST) api/v1/movies
+
+{
+    "id": 23,
+    "title": "A Teoria de Tudo",
+    "score": 0.0,
+    "count": 0,
+    "image": "https://www.themoviedb.org/GHE6U.jpg"
+}
+```
+Changing a Movie
+```
+(PUT) api/v1/movies/{id}
+
+{
+    "title": "A Teoria do Mundo",
+    "image": "https://www.themoviedb.org/HRU78.jpg"
+}
+```
+Evaluate a movie
+```
+(POST) api/v1/scores/{id}
+
+{
+    "movieId": 12,
+    "email": "joaquim@gmail.com",
+    "score": 4.5
+}
 ```
 
 ## 📫 Contributing to API-Movie
