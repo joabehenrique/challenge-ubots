@@ -13,7 +13,6 @@
 Before you begin, make sure you have met the following requirements:
 
 - You need the version `17` of `Java/JDK`, `PostgreSQL` on your machine.
-  If you need installation instructions, click here.
 
 If you need installation instructions, [click here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiJ7Ieqxs39AhUwppUCHWvFBVoQFnoECAkQAQ&url=https%3A%2F%2Fjava.tutorials24x7.com%2Fblog%2Fhow-to-install-java-17-on-windows&usg=AOvVaw0NRBuZwgs0vrM5_YVqmD20).
 
@@ -60,7 +59,7 @@ Creating a movie
     "image": "https://www.themoviedb.org/GHE6U.jpg"
 }
 ```
-Changing a Movie
+Changing a movie
 ```
 (PUT) api/v1/movies/{id}
 
